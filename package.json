@@ -1,21 +1,25 @@
 {
-  "name": "codegrid-lacrapulestudio-hover-animation",
+  "name": "fractal-glass-effect-nextjs",
   "version": "1.0.0",
-  "description": "Hover animation built with GSAP, Three.js and Vite.",
-  "main": "index.js",
+  "description": "Fractal Glass Parallax Effect built with Next.js, GSAP, and Three.js",
   "scripts": {
     "postinstall": "node -e \"if (process.platform!=='win32'){require('child_process').execSync('chmod +x node_modules/.bin/*',{stdio:'inherit'})}\"",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "host": "vite --host"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev:vite": "vite",
+    "build:vite": "vite build"
   },
   "keywords": [
-    "vite",
+    "nextjs",
+    "react",
     "gsap",
     "three",
+    "webgl",
     "animation",
-    "frontend",
+    "glass-effect",
+    "parallax",
     "codegrid"
   ],
   "author": "Worapon Jintajirakul",
@@ -23,11 +27,19 @@
   "engines": {
     "node": ">=18"
   },
-  "devDependencies": {
-    "vite": "^7.1.12"
-  },
   "dependencies": {
     "gsap": "^3.13.0",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.175.0",
+    "typescript": "^5.6.3",
+    "vite": "^7.1.12"
   }
 }
